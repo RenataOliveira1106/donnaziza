@@ -130,85 +130,73 @@
       <ul class="nav sidebar-inner" id="sidebar-menu">
 
 
-
-        <li  class="has-sub active expand" >
-          <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#dashboard"
-          aria-expanded="false" aria-controls="dashboard">
-          <i class="mdi mdi-view-dashboard-outline"></i>
+        <li  class="has-sub" >
+          <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#ui-elements"
+          aria-expanded="false" aria-controls="ui-elements">
+          <i class="mdi mdi-folder-multiple-outline"></i>
           <span class="nav-text"> Bebidas </span> <b class="caret"></b>
         </a>
-        <ul  class="collapse show"  id="dashboard"
+        <ul  class="collapse"  id="ui-elements"
         data-parent="#sidebar-menu">
-      </ul>
-    </li>
+        <div class="sub-menu">
+
+          <li >
+            <a href="alert.html"> Bebidas Quentes </a>
+          </li>
+
+          <li >
+            <a href="badge.html">Bebidas Geladas</a>
+          </li>
+
+          <li >
+            <a href="breadcrumb.html">Vitamina</a>
+          </li>
+
+          <li >
+            <a href="list-group.html">Bebida Alcolica</a>
+          </li>
 
 
-    <li  class="has-sub" >
-      <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#ui-elements"
-      aria-expanded="false" aria-controls="ui-elements">
-      <i class="mdi mdi-folder-multiple-outline"></i>
-      <span class="nav-text"> Bebidas </span> <b class="caret"></b>
-    </a>
-    <ul  class="collapse"  id="ui-elements"
-    data-parent="#sidebar-menu">
-    <div class="sub-menu">
+        </li>
 
-      <li >
-        <a href="alert.html"> Bebidas Quentes </a>
-      </li>
-
-      <li >
-        <a href="badge.html">Bebidas Geladas</a>
-      </li>
-
-      <li >
-        <a href="breadcrumb.html">Vitamina</a>
-      </li>
-
-      <li >
-        <a href="list-group.html">Bebida Alcolica</a>
-      </li>
+      </div>
+    </ul>
+  </li>
 
 
-    </li>
-
-</div>
-</ul>
+  <li  class="has-sub active expand" >
+    <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#dashboard"
+    aria-expanded="false" aria-controls="dashboard">
+    <i class="mdi mdi-view-dashboard-outline"></i>
+    <span class="nav-text"> Vitamina </span> <b class="caret"></b>
+  </a>
 </li>
 
 
+  <li  class="has-sub active expand" >
+    <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#dashboard"
+    aria-expanded="false" aria-controls="dashboard">
+    <i class="mdi mdi-view-dashboard-outline"></i>
+    <span class="nav-text"> Lanches </span> <b class="caret"></b>
+  </a>
+</li>
 
 
-<li  class="has-sub" >
-  <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#charts"
-  aria-expanded="false" aria-controls="charts">
-  <i class="mdi mdi-chart-pie"></i>
-  <span class="nav-text">Lanches</span> <b class="caret"></b>
+<li  class="has-sub active expand" >
+  <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#dashboard"
+    aria-expanded="false" aria-controls="dashboard">
+    <i class="mdi mdi-view-dashboard-outline"></i>
+    <span class="nav-text"> Crepioca </span> <b class="caret"></b>
+  </a>
+</li>
+
+<li  class="has-sub active expand" >
+  <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#dashboard"
+  aria-expanded="false" aria-controls="dashboard">
+  <i class="mdi mdi-view-dashboard-outline"></i>
+  <span class="nav-text"> Omelete </span> <b class="caret"></b>
 </a>
 </li>
-
-
-
-
-
-<li  class="has-sub active expand" >
-  <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#dashboard"
-    aria-expanded="false" aria-controls="dashboard">
-    <i class="mdi mdi-view-dashboard-outline"></i>
-    <span class="nav-text"> Crepioca </span> <b class="caret"></b>
-  </a>
-</li>
-
-
-
-<li  class="has-sub active expand" >
-  <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#dashboard"
-    aria-expanded="false" aria-controls="dashboard">
-    <i class="mdi mdi-view-dashboard-outline"></i>
-    <span class="nav-text"> Crepioca </span> <b class="caret"></b>
-  </a>
-</li>
-
 
 
 <li  class="has-sub active expand" >
@@ -220,6 +208,13 @@
 </li>
 
 
+<li  class="has-sub active expand" >
+  <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#dashboard"
+  aria-expanded="false" aria-controls="dashboard">
+  <i class="mdi mdi-view-dashboard-outline"></i>
+  <span class="nav-text"> Pizza </span> <b class="caret"></b>
+</a>
+</li>
 
 
 
@@ -281,7 +276,7 @@
       @include('alerts.success_toast')
       @include('alerts.success')
       @include('alerts.error')
-      
+
       @yield('conteudo')
 
 
