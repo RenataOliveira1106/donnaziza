@@ -133,7 +133,7 @@
         <li  class="has-sub" >
           <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#ui-elements"
           aria-expanded="false" aria-controls="ui-elements">
-          <i class="mdi mdi-folder-multiple-outline"></i>
+          <!-- <i class="mdi mdi-folder-multiple-outline"></i> -->
           <span class="nav-text"> Bebidas </span> <b class="caret"></b>
         </a>
         <ul  class="collapse"  id="ui-elements"
@@ -167,7 +167,7 @@
   <li  class="has-sub active expand" >
     <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#dashboard"
     aria-expanded="false" aria-controls="dashboard">
-    <i class="mdi mdi-view-dashboard-outline"></i>
+    <!-- <i class="mdi mdi-view-dashboard-outline"></i> -->
     <span class="nav-text"> Vitamina </span> <b class="caret"></b>
   </a>
 </li>
@@ -176,7 +176,7 @@
   <li  class="has-sub active expand" >
     <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#dashboard"
     aria-expanded="false" aria-controls="dashboard">
-    <i class="mdi mdi-view-dashboard-outline"></i>
+    <!-- <i class="mdi mdi-view-dashboard-outline"></i> -->
     <span class="nav-text"> Lanches </span> <b class="caret"></b>
   </a>
 </li>
@@ -185,7 +185,7 @@
 <li  class="has-sub active expand" >
   <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#dashboard"
     aria-expanded="false" aria-controls="dashboard">
-    <i class="mdi mdi-view-dashboard-outline"></i>
+    <!-- <i class="mdi mdi-view-dashboard-outline"></i> -->
     <span class="nav-text"> Crepioca </span> <b class="caret"></b>
   </a>
 </li>
@@ -193,7 +193,7 @@
 <li  class="has-sub active expand" >
   <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#dashboard"
   aria-expanded="false" aria-controls="dashboard">
-  <i class="mdi mdi-view-dashboard-outline"></i>
+  <!-- <i class="mdi mdi-view-dashboard-outline"></i> -->
   <span class="nav-text"> Omelete </span> <b class="caret"></b>
 </a>
 </li>
@@ -202,7 +202,7 @@
 <li  class="has-sub active expand" >
   <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#dashboard"
   aria-expanded="false" aria-controls="dashboard">
-  <i class="mdi mdi-view-dashboard-outline"></i>
+  <!-- <i class="mdi mdi-view-dashboard-outline"></i> -->
   <span class="nav-text"> Pastel </span> <b class="caret"></b>
 </a>
 </li>
@@ -211,7 +211,7 @@
 <li  class="has-sub active expand" >
   <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#dashboard"
   aria-expanded="false" aria-controls="dashboard">
-  <i class="mdi mdi-view-dashboard-outline"></i>
+  <!-- <i class="mdi mdi-view-dashboard-outline"></i> -->
   <span class="nav-text"> Pizza </span> <b class="caret"></b>
 </a>
 </li>
