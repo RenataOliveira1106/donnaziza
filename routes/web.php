@@ -21,6 +21,7 @@ Route::prefix('cardapio')->group(function(){
   //Café da manhã
   Route::prefix('cafeManha')->group(function(){
     Route::get('', 'cafeManhaController@index')->name('cafeManha.index'); //->middleware('auth');
+    Route::get('novo', 'cafeManhaController@novo')->name('cafeManha.novo'); //->middleware('auth');
     Route::post('salvar', 'cafeManhaController@salvar')->name('cafeManha.salvar'); //->middleware('auth');
     Route::get('editar', 'cafeManhaController@editar')->name('cafeManha.editar'); //->middleware('auth');
     Route::post('atualizar', 'cafeManhaController@atualizar')->name('cafeManha.atualizar'); //->middleware('auth');
@@ -32,6 +33,7 @@ Route::prefix('cardapio')->group(function(){
   //Açai
   Route::prefix('açai')->group(function(){
     Route::get('', 'AcaiController@index')->name('acai.index'); //->middleware('auth');
+    Route::get('novo', 'AcaiController@novo')->name('acai.novo'); //->middleware('auth');
     Route::post('salvar', 'AcaiController@salvar')->name('acai.salvar'); //->middleware('auth');
     Route::get('editar', 'AcaiController@editar')->name('acai.editar'); //->middleware('auth');
     Route::post('atualizar', 'AcaiController@atualizar')->name('acai.atualizar'); //->middleware('auth');
@@ -43,6 +45,7 @@ Route::prefix('cardapio')->group(function(){
   //Bebidas
   Route::prefix('bebida')->group(function(){
     Route::get('', 'BebidaController@index')->name('bebida.index'); //->middleware('auth');
+    Route::get('novo', 'BebidaController@novo')->name('bebida.novo'); //->middleware('auth');
     Route::post('salvar', 'BebidaController@salvar')->name('bebida.salvar'); //->middleware('auth');
     Route::get('editar', 'BebidaController@editar')->name('bebida.editar'); //->middleware('auth');
     Route::post('atualizar', 'BebidaController@atualizar')->name('bebida.atualizar'); //->middleware('auth');
@@ -54,6 +57,7 @@ Route::prefix('cardapio')->group(function(){
   //Crepioca
   Route::prefix('crepioca')->group(function(){
     Route::get('', 'CrepiocaController@index')->name('crepioca.index'); //->middleware('auth');
+    Route::get('novo', 'CrepiocaController@novo')->name('crepioca.novo'); //->middleware('auth');
     Route::post('salvar', 'CrepiocaController@salvar')->name('crepioca.salvar'); //->middleware('auth');
     Route::get('editar', 'CrepiocaController@editar')->name('crepioca.editar'); //->middleware('auth');
     Route::post('atualizar', 'CrepiocaController@atualizar')->name('crepioca.atualizar'); //->middleware('auth');
@@ -65,6 +69,7 @@ Route::prefix('cardapio')->group(function(){
   //Lanches
   Route::prefix('lanche')->group(function(){
     Route::get('', 'LancheController@index')->name('lanche.index'); //->middleware('auth');
+    Route::get('novo', 'LancheController@novo')->name('lanche.novo'); //->middleware('auth');
     Route::post('salvar', 'LancheController@salvar')->name('lanche.salvar'); //->middleware('auth');
     Route::get('editar', 'LancheController@editar')->name('lanche.editar'); //->middleware('auth');
     Route::post('atualizar', 'LancheController@atualizar')->name('lanche.atualizar'); //->middleware('auth');
@@ -76,6 +81,7 @@ Route::prefix('cardapio')->group(function(){
   //Omeletes
   Route::prefix('omelete')->group(function(){
     Route::get('', 'OmeleteController@index')->name('omelete.index'); //->middleware('auth');
+    Route::get('novo', 'OmeleteController@novo')->name('omelete.novo'); //->middleware('auth');
     Route::post('salvar', 'OmeleteController@salvar')->name('omelete.salvar'); //->middleware('auth');
     Route::get('editar', 'OmeleteController@editar')->name('omelete.editar'); //->middleware('auth');
     Route::post('atualizar', 'OmeleteController@atualizar')->name('omelete.atualizar'); //->middleware('auth');
@@ -87,6 +93,7 @@ Route::prefix('cardapio')->group(function(){
   //Pasteis
   Route::prefix('pastel')->group(function(){
     Route::get('', 'PastelController@index')->name('pastel.index'); //->middleware('auth');
+    Route::get('novo', 'PastelController@novo')->name('pastel.novo'); //->middleware('auth');
     Route::post('salvar', 'PastelController@salvar')->name('pastel.salvar'); //->middleware('auth');
     Route::get('editar', 'PastelController@editar')->name('pastel.editar'); //->middleware('auth');
     Route::post('atualizar', 'PastelController@atualizar')->name('pastel.atualizar'); //->middleware('auth');
@@ -98,6 +105,7 @@ Route::prefix('cardapio')->group(function(){
   //Pizzas
   Route::prefix('pizza')->group(function(){
     Route::get('', 'PizzaController@index')->name('pizza.index'); //->middleware('auth');
+    Route::get('novo', 'PizzaController@novo')->name('pizza.novo'); //->middleware('auth');
     Route::post('salvar', 'PizzaController@salvar')->name('pizza.salvar'); //->middleware('auth');
     Route::get('editar', 'PizzaController@editar')->name('pizza.editar'); //->middleware('auth');
     Route::post('atualizar', 'PizzaController@atualizar')->name('pizza.atualizar'); //->middleware('auth');
@@ -109,6 +117,7 @@ Route::prefix('cardapio')->group(function(){
   //Porções
   Route::prefix('porcao')->group(function(){
     Route::get('', 'PorcaoController@index')->name('porcao.index'); //->middleware('auth');
+    Route::get('novo', 'PorcaoController@novo')->name('porcao.novo'); //->middleware('auth');
     Route::post('salvar', 'PorcaoController@salvar')->name('porcao.salvar'); //->middleware('auth');
     Route::get('editar', 'PorcaoController@editar')->name('porcao.editar'); //->middleware('auth');
     Route::post('atualizar', 'PorcaoController@atualizar')->name('porcao.atualizar'); //->middleware('auth');

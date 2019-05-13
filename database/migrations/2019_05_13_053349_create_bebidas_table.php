@@ -15,6 +15,8 @@ class CreateBebidasTable extends Migration
     {
         Schema::create('bebidas', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('descricao');
+            $table->float('preco');
             $table->timestamps();
         });
     }

@@ -4,11 +4,11 @@
 @section('conteudo')
 
   <div class="row">
-    <div class="card">
+    <div class="card" class="col-md-12">
     <div class="card-header"> Porção Novo </div>
       <div class="card-body">
 
-        <form action="" method="post">
+        <form action="{{ route('porcao.salvar') }}" method="post">
 
           @include('produtos.porcao.form.form')
 

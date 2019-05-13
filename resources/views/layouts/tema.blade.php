@@ -7,6 +7,8 @@
 
   <title> @yield('titulo') </title>
 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
   <!-- GOOGLE FONTS -->
   <link href="{{ asset('https://fonts.googleapis.com/css?family=Montserrat:400,500|Poppins:400,500,600,700|Roboto:400,500') }}" rel="stylesheet"/>
   <link href="{{ asset('https://cdn.materialdesignicons.com/3.0.39/css/materialdesignicons.min.css') }}" rel="stylesheet" />
@@ -706,7 +708,7 @@ data-parent="#sidebar-menu">
       @include('alerts.success_toast')
       @include('alerts.success')
       @include('alerts.error')
-      
+
       @yield('conteudo')
 
 

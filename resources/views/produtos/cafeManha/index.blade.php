@@ -4,7 +4,7 @@
 @section('conteudo')
 
   <div class="row">
-    <div class="card">
+    <div class="card" class="col-md-12">
     <div class="card-header"> Café da Manhã Index </div>
       <div class="card-body">
 
