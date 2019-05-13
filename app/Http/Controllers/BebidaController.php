@@ -1,24 +1,24 @@
 <?php
 
-namespace App;
+namespace App\Http\Controllers;
 
-use Illuminate\Database\Eloquent\Model;
+use Illuminate\Http\Request;
 
-class PizzaController extends Model
+class BebidaController extends Controller
 {
   // ============================
   // INICIO CRUD
   // ============================
 
 
-  // Retorna uma tabela com todos as pizzas cadastradas
+  // Retorna uma tabela com todos as bebidas cadastradas
   public function index()
   {
 
   }
 
 
-  // Retorna o fomulário de cadastro de pizza
+  // Retorna o fomulário de cadastro de bebida
   public function novo()
   {
 
@@ -27,7 +27,7 @@ class PizzaController extends Model
 
 
 
-  // Salva no banco de dados uma pizza cadastrada
+  // Salva no banco de dados uma bebida cadastrada
   public function salvar(Request $request)
   {
 
@@ -37,7 +37,7 @@ class PizzaController extends Model
 
 
 
-  // Retorna o fomulário de edição de pizza
+  // Retorna o fomulário de edição de bebida
   public function editar($id)
   {
 
@@ -46,13 +46,13 @@ class PizzaController extends Model
 
 
 
-  // Atualiza o cadastro de uma pizza no banco de dados
+  // Atualiza o cadastro de uma bebida no banco de dados
   public function atualizar(Request $request)
   {
 
   }
 
-  // Deleta uma pizza do banco de dados
+  // Deleta uma bebida do banco de dados
   public function excluir($id)
   {
 

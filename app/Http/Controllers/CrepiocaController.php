@@ -1,25 +1,24 @@
 <?php
 
-namespace App;
+namespace App\Http\Controllers;
 
-use Illuminate\Database\Eloquent\Model;
+use Illuminate\Http\Request;
 
-class PorcaoController extends Model
+class CrepiocaController extends Controller
 {
-
   // ============================
   // INICIO CRUD
   // ============================
 
 
-  // Retorna uma tabela com todos as porções cadastradas
+  // Retorna uma tabela com todos as crepiocas cadastradas
   public function index()
   {
 
   }
 
 
-  // Retorna o fomulário de cadastro de porção
+  // Retorna o fomulário de cadastro de crepioca
   public function novo()
   {
 
@@ -28,7 +27,7 @@ class PorcaoController extends Model
 
 
 
-  // Salva no banco de dados uma porção cadastrada
+  // Salva no banco de dados uma crepioca cadastrada
   public function salvar(Request $request)
   {
 
@@ -38,7 +37,7 @@ class PorcaoController extends Model
 
 
 
-  // Retorna o fomulário de edição de porção
+  // Retorna o fomulário de edição de crepioca
   public function editar($id)
   {
 
@@ -47,13 +46,13 @@ class PorcaoController extends Model
 
 
 
-  // Atualiza o cadastro de uma porção no banco de dados
+  // Atualiza o cadastro de uma crepioca no banco de dados
   public function atualizar(Request $request)
   {
 
   }
 
-  // Deleta uma porção do banco de dados
+  // Deleta uma crepioca do banco de dados
   public function excluir($id)
   {
 

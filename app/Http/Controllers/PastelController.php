@@ -1,24 +1,24 @@
 <?php
 
-namespace App;
+namespace App\Http\Controllers;
 
-use Illuminate\Database\Eloquent\Model;
+use Illuminate\Http\Request;
 
-class BebidaController extends Model
+class PastelController extends Controller
 {
   // ============================
   // INICIO CRUD
   // ============================
 
 
-  // Retorna uma tabela com todos as bebidas cadastradas
+  // Retorna uma tabela com todos os pasteis cadastrados
   public function index()
   {
 
   }
 
 
-  // Retorna o fomulário de cadastro de bebida
+  // Retorna o fomulário de cadastro de pastel
   public function novo()
   {
 
@@ -27,7 +27,7 @@ class BebidaController extends Model
 
 
 
-  // Salva no banco de dados uma bebida cadastrada
+  // Salva no banco de dados um pastel cadastrado
   public function salvar(Request $request)
   {
 
@@ -37,7 +37,7 @@ class BebidaController extends Model
 
 
 
-  // Retorna o fomulário de edição de bebida
+  // Retorna o fomulário de edição de pastel
   public function editar($id)
   {
 
@@ -45,14 +45,14 @@ class BebidaController extends Model
 
 
 
-
-  // Atualiza o cadastro de uma bebida no banco de dados
+  
+  // Atualiza o cadastro de um pastel no banco de dados
   public function atualizar(Request $request)
   {
 
   }
 
-  // Deleta uma bebida do banco de dados
+  // Deleta um pastel do banco de dados
   public function excluir($id)
   {
 

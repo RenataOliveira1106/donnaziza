@@ -1,24 +1,24 @@
 <?php
 
-namespace App;
+namespace App\Http\Controllers;
 
-use Illuminate\Database\Eloquent\Model;
+use Illuminate\Http\Request;
 
-class LanchesController extends Model
+class AcaiController extends Controller
 {
   // ============================
   // INICIO CRUD
   // ============================
 
 
-  // Retorna uma tabela com todos os lanches cadastrados
+  // Retorna uma tabela com todos os açais cadastrados
   public function index()
   {
 
   }
 
 
-  // Retorna o fomulário de cadastro de lanche
+  // Retorna o fomulário de cadastro de açai
   public function novo()
   {
 
@@ -27,7 +27,7 @@ class LanchesController extends Model
 
 
 
-  // Salva no banco de dados um lanche cadastrado
+  // Salva no banco de dados um açai cadastrado
   public function salvar(Request $request)
   {
 
@@ -37,7 +37,7 @@ class LanchesController extends Model
 
 
 
-  // Retorna o fomulário de edição de lanche
+  // Retorna o fomulário de edição de açai
   public function editar($id)
   {
 
@@ -46,13 +46,13 @@ class LanchesController extends Model
 
 
 
-  // Atualiza o cadastro de um lanche no banco de dados
+  // Atualiza o cadastro de um açai no banco de dados
   public function atualizar(Request $request)
   {
 
   }
 
-  // Deleta um lanche do banco de dados
+  // Deleta um açai do banco de dados
   public function excluir($id)
   {
 

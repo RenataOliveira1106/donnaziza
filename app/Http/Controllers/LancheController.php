@@ -1,24 +1,24 @@
 <?php
 
-namespace App;
+namespace App\Http\Controllers;
 
-use Illuminate\Database\Eloquent\Model;
+use Illuminate\Http\Request;
 
-class OmeleteController extends Model
+class LancheController extends Controller
 {
   // ============================
   // INICIO CRUD
   // ============================
 
 
-  // Retorna uma tabela com todos os omeletes cadastrados
+  // Retorna uma tabela com todos os lanches cadastrados
   public function index()
   {
 
   }
 
 
-  // Retorna o fomulário de cadastro de omelete
+  // Retorna o fomulário de cadastro de lanche
   public function novo()
   {
 
@@ -27,7 +27,7 @@ class OmeleteController extends Model
 
 
 
-  // Salva no banco de dados um omelete cadastrado
+  // Salva no banco de dados um lanche cadastrado
   public function salvar(Request $request)
   {
 
@@ -37,7 +37,7 @@ class OmeleteController extends Model
 
 
 
-  // Retorna o fomulário de edição de omelete
+  // Retorna o fomulário de edição de lanche
   public function editar($id)
   {
 
@@ -45,14 +45,14 @@ class OmeleteController extends Model
 
 
 
-
-  // Atualiza o cadastro de um omelete no banco de dados
+  
+  // Atualiza o cadastro de um lanche no banco de dados
   public function atualizar(Request $request)
   {
 
   }
 
-  // Deleta um omelete do banco de dados
+  // Deleta um lanche do banco de dados
   public function excluir($id)
   {
 

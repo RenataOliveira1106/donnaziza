@@ -1,24 +1,24 @@
 <?php
 
-namespace App;
+namespace App\Http\Controllers;
 
-use Illuminate\Database\Eloquent\Model;
+use Illuminate\Http\Request;
 
-class AcaiController extends Model
+class PorcaoController extends Controller
 {
   // ============================
   // INICIO CRUD
   // ============================
 
 
-  // Retorna uma tabela com todos os açais cadastrados
+  // Retorna uma tabela com todos as porções cadastradas
   public function index()
   {
 
   }
 
 
-  // Retorna o fomulário de cadastro de açai
+  // Retorna o fomulário de cadastro de porção
   public function novo()
   {
 
@@ -27,7 +27,7 @@ class AcaiController extends Model
 
 
 
-  // Salva no banco de dados um açai cadastrado
+  // Salva no banco de dados uma porção cadastrada
   public function salvar(Request $request)
   {
 
@@ -37,7 +37,7 @@ class AcaiController extends Model
 
 
 
-  // Retorna o fomulário de edição de açai
+  // Retorna o fomulário de edição de porção
   public function editar($id)
   {
 
@@ -46,13 +46,13 @@ class AcaiController extends Model
 
 
 
-  // Atualiza o cadastro de um açai no banco de dados
+  // Atualiza o cadastro de uma porção no banco de dados
   public function atualizar(Request $request)
   {
 
   }
 
-  // Deleta um açai do banco de dados
+  // Deleta uma porção do banco de dados
   public function excluir($id)
   {
 

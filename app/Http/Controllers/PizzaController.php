@@ -1,24 +1,24 @@
 <?php
 
-namespace App;
+namespace App\Http\Controllers;
 
-use Illuminate\Database\Eloquent\Model;
+use Illuminate\Http\Request;
 
-class PastelController extends Model
+class PizzaController extends Controller
 {
   // ============================
   // INICIO CRUD
   // ============================
 
 
-  // Retorna uma tabela com todos os pasteis cadastrados
+  // Retorna uma tabela com todos as pizzas cadastradas
   public function index()
   {
 
   }
 
 
-  // Retorna o fomulário de cadastro de pastel
+  // Retorna o fomulário de cadastro de pizza
   public function novo()
   {
 
@@ -27,7 +27,7 @@ class PastelController extends Model
 
 
 
-  // Salva no banco de dados um pastel cadastrado
+  // Salva no banco de dados uma pizza cadastrada
   public function salvar(Request $request)
   {
 
@@ -37,7 +37,7 @@ class PastelController extends Model
 
 
 
-  // Retorna o fomulário de edição de pastel
+  // Retorna o fomulário de edição de pizza
   public function editar($id)
   {
 
@@ -46,13 +46,13 @@ class PastelController extends Model
 
 
 
-  // Atualiza o cadastro de um pastel no banco de dados
+  // Atualiza o cadastro de uma pizza no banco de dados
   public function atualizar(Request $request)
   {
 
   }
 
-  // Deleta um pastel do banco de dados
+  // Deleta uma pizza do banco de dados
   public function excluir($id)
   {
 

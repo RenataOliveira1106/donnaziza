@@ -1,24 +1,24 @@
 <?php
 
-namespace App;
+namespace App\Http\Controllers;
 
-use Illuminate\Database\Eloquent\Model;
+use Illuminate\Http\Request;
 
-class CrepiocaController extends Model
+class OmeleteController extends Controller
 {
   // ============================
   // INICIO CRUD
   // ============================
 
 
-  // Retorna uma tabela com todos as crepiocas cadastradas
+  // Retorna uma tabela com todos os omeletes cadastrados
   public function index()
   {
 
   }
 
 
-  // Retorna o fomulário de cadastro de crepioca
+  // Retorna o fomulário de cadastro de omelete
   public function novo()
   {
 
@@ -27,7 +27,7 @@ class CrepiocaController extends Model
 
 
 
-  // Salva no banco de dados uma crepioca cadastrada
+  // Salva no banco de dados um omelete cadastrado
   public function salvar(Request $request)
   {
 
@@ -37,22 +37,22 @@ class CrepiocaController extends Model
 
 
 
-  // Retorna o fomulário de edição de crepioca
+  // Retorna o fomulário de edição de omelete
   public function editar($id)
   {
 
   }
 
+  
 
 
-
-  // Atualiza o cadastro de uma crepioca no banco de dados
+  // Atualiza o cadastro de um omelete no banco de dados
   public function atualizar(Request $request)
   {
 
   }
 
-  // Deleta uma crepioca do banco de dados
+  // Deleta um omelete do banco de dados
   public function excluir($id)
   {
 
