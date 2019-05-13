@@ -11,6 +11,10 @@
   <link href="{{ asset('https://fonts.googleapis.com/css?family=Montserrat:400,500|Poppins:400,500,600,700|Roboto:400,500') }}" rel="stylesheet"/>
   <link href="{{ asset('https://cdn.materialdesignicons.com/3.0.39/css/materialdesignicons.min.css') }}" rel="stylesheet" />
 
+  <!-- Font Awesome -->
+  <!-- <link rel="stylesheet" href="{{ asset('theme/plugins/font-awesome/css/font-awesome.min.css') }}"> -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
   <!-- PLUGINS CSS STYLE -->
   <link href="{{ asset('tema/assets/plugins/toaster/toastr.min.css') }}" rel="stylesheet" />
   <link href="{{ asset('tema/assets/plugins/nprogress/nprogress.css') }}" rel="stylesheet" />
@@ -22,7 +26,6 @@
 
   <!-- SLEEK CSS -->
   <link id="sleek-css" rel="stylesheet" href="{{ asset('tema/assets/css/sleek.css') }}" />
-
 
 
   <!-- FAVICON -->
@@ -39,9 +42,9 @@
 <script src="{{ asset('tema/assets/plugins/nprogress/nprogress.js') }}"></script>
 
 
-
-<script src="{{ asset('tema/https://maps.googleapis.com/maps/api/js?key=AIzaSyDCn8TFXGg17HAUcNpkwtxxyT9Io9B_NcM') }}" defer></script>
+<!-- SCRIPTS -->
 <script src="{{ asset('tema/assets/plugins/jquery/jquery.min.js') }}"></script>
+<script src="{{ asset('tema/https://maps.googleapis.com/maps/api/js?key=AIzaSyDCn8TFXGg17HAUcNpkwtxxyT9Io9B_NcM') }}" defer></script>
 <script src="{{ asset('tema/assets/plugins/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
 <script src="{{ asset('tema/assets/plugins/toaster/toastr.min.js') }}"></script>
 <script src="{{ asset('tema/assets/plugins/slimscrollbar/jquery.slimscroll.min.js') }}"></script>
@@ -60,6 +63,22 @@
 <script src="{{ asset('tema/assets/js/date-range.js') }}"></script>
 <script src="{{ asset('tema/assets/js/map.js') }}"></script>
 <script src="{{ asset('tema/assets/js/custom.js') }}"></script>
+
+<!-- Plugins -->
+
+<!-- Sweet Alert 2 -->
+<script src="{{ asset('js/sweetalert2.min.js') }}"></script>
+<link rel="stylesheet" href="{{ asset('css/sweetalert2.min.css') }}">
+
+<!-- DataTables -->
+<link rel="stylesheet" type="text/css" href="{{ asset('DataTables/datatables.min.css') }}"/>
+<script type="text/javascript" src="{{ asset('DataTables/datatables.min.js') }}"></script>
+
+<!-- jQuery Mask-->
+<script src="{{ asset('js/jquery.mask.js') }}"></script>
+
+<!-- jQuery Mask Money-->
+<script src="{{ asset('js/jquery.maskMoney.js') }}"></script>
 
 </head>
 
@@ -259,7 +278,10 @@
   <div class="content-wrapper">
     <div class="content">
 
-
+      @include('alerts.success_toast')
+      @include('alerts.success')
+      @include('alerts.error')
+      
       @yield('conteudo')
 
 
